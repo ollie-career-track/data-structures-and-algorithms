@@ -8,4 +8,4 @@ function insertShiftArray(array, value) {
   return newArray;
 }
 
-module.exports = {insertShiftArray};
+module.exports = { insertShiftArray };
