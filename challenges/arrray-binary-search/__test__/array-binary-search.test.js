@@ -1,6 +1,6 @@
 const binary = require('../array-binary-search');
 
-describe('searches array for search key', () => { 
+describe.skip('searches array for search key', () => { 
   const sortedArray = [4, 8, 15, 16, 23, 42];
   const searchKey = 15;	
   const anotherSortedArray = [11, 22, 33, 44, 55, 66, 77];
