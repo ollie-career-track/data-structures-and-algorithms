@@ -13,6 +13,7 @@ class LinkedList {
 
   insert(value) {
     // adds new node to head of list
+    // increase size of obj
     return value;
   }
 
