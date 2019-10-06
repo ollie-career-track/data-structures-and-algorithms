@@ -1,34 +1,27 @@
 class Node {
-  constructor(value, next) {
+  constructor(value) {
     this.value = value;
-    this.next = next;
+    this.next = null;
   }
 }
 
 class LinkedList {
-  constructor(head, size) {
-    this.head = head;
-    this.size = size;
+  constructor() {
+    this.head = null;
+    this.size = 0;
   }
 
   insert(value) {
-    // adds new node to head of list
-    // increase size of obj
-    return value;
+    
   }
 
   includes(value) {
-    // returns true if value exists within list
-    // returns false if value doesn't exist within the list
-    return value;
+
   }
 
   toString() {
-    // returns a string containing all values in linked list
+
   }
 }
 
-module.exports = {
-  Node,
-  LinkedList
-};
+module.exports = LinkedList;
