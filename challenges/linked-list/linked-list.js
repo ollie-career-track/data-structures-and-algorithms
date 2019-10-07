@@ -12,7 +12,11 @@ class LinkedList {
   }
 
   insert(value) {
-    
+    const node = new Node(value);
+    node.next = this.head;
+
+    this.head = node;
+    this.size++;
   }
 
   includes(value) {
@@ -24,4 +28,7 @@ class LinkedList {
   }
 }
 
-module.exports = LinkedList;
+module.exports = {
+  LinkedList,
+  Node
+};

@@ -1,26 +1,43 @@
-const LinkedList = require('../linked-list');
+const { LinkedList } = require('../linked-list');
 
 describe('linked list', () => {
 
   describe('linked list', () => {
     it('creates an empty linked list', () => {
-      const linkedList = new LinkedList;
-      expect(linkedList.head).toBe(null);
-      expect(linkedList.size).toBe(0);
+      const list = new LinkedList;
+      expect(list.head).toBe(null);
+      expect(list.size).toBe(0);
     });
   });
 
   describe('insert method', () => {
     it('adds node to beginning of list', () => {
+      const list = new LinkedList;
+      list.insert('random value');
 
+      expect(list.size).toBe(1);
     });
 
     it('head property points to first node in linked list', () => {
+      const pojo = {
+        value: 'random value',
+        next: null
+      };
+      
+      const list = new LinkedList;
+      list.insert('random value');
 
+      expect(list.head).toEqual(pojo);
     });
 
     it('can insert multiple nodes into linked list', () => {
+      const list = new LinkedList;
 
+      list.insert('first value');
+      list.insert('second value');
+      list.insert('third value');
+
+      expect(list.size).toBe(3);
     });
   });
 
