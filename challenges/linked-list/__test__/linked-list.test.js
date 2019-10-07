@@ -65,7 +65,12 @@ describe('linked list', () => {
 
   describe('toString method', () => {
     it('returns a string of all values in linked list', () => {
+      const list = new LinkedList;
 
+      list.insert(0);
+      list.insert(1);
+
+      expect(list.toString()).toBe('10');
     });
   });
 });

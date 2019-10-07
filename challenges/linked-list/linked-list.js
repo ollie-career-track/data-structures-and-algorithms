@@ -32,7 +32,14 @@ class LinkedList {
   }
 
   toString() {
+    let current = this.head;
+    let values = '';
 
+    for(let i = 0; i < this.size; i++) {
+      values += current.value;
+      current = current.next;
+    }
+    return values;
   }
 }
 
