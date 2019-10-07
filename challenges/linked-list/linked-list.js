@@ -20,7 +20,15 @@ class LinkedList {
   }
 
   includes(value) {
+    let current = this.head;
 
+    for(let i = 0; i < this.size; i++) {
+      if(current.value === value) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
   }
 
   toString() {

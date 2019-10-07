@@ -43,11 +43,23 @@ describe('linked list', () => {
 
   describe('includes method', () => {
     it('returns true if search value exists in list', () => {
+      const list = new LinkedList;
 
+      list.insert('first value');
+      list.insert('second value');
+      list.insert('third value');
+
+      expect(list.includes('second value')).toBe(true);
     });
 
     it('returns false if search value does not exist in list', () => {
+      const list = new LinkedList;
 
+      list.insert('first value');
+      list.insert('second value');
+      list.insert('third value');
+
+      expect(list.includes('random value')).toBe(false);
     });
   });
 
