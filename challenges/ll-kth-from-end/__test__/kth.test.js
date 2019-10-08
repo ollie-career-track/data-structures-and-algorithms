@@ -3,9 +3,13 @@ const { LinkedList } = require('../kth');
 describe('Linked List kth from the end', () => {
 
   describe('kthFromEnd method', () => {
-    it('finds where k is greater than length of list', () => {
+    it.only('finds where k is greater than length of list', () => {
       const list = new LinkedList;
       list.insert('head');
+
+      expect(() => {
+        list.kthFromEnd(100);
+      }).toThrow('k cannot exceed size of list');
     });
 
     it('finds where k and length of list are the same', () => {
