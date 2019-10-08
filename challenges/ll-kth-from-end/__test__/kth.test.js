@@ -22,7 +22,12 @@ describe('Linked List kth from the end', () => {
     });
     
     it('finds where k is not a positive integer', () => {
-      
+      const list = new LinkedList;
+      list.insert('head');
+
+      expect(() => {
+        list.kthFromEnd(-8);
+      }).toThrow('k cannot be a negative integer');
     });
 
     it('finds where linked list is size of one', () => {
