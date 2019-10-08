@@ -8,4 +8,5 @@
 * [Linked List Insertions](./challenges/linked-list-insertions/README.md)
 * [Linked List Kth from the End](./challenges/ll-kth-from-end/README.md)
 * [Linked List Merge](./challenges/ll-merge/README.md)
+* [Queue with Stacks](./challenges/queue-with-stacks/README.md)
 * []()
