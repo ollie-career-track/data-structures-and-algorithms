@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570500649480" clover="3.2.0">
-  <project timestamp="1570500649480" name="All files">
-    <metrics statements="50" coveredstatements="11" conditionals="14" coveredconditionals="1" methods="9" coveredmethods="4" elements="73" coveredelements="16" complexity="0" loc="50" ncloc="50" packages="1" files="1" classes="1"/>
+<coverage generated="1570500926803" clover="3.2.0">
+  <project timestamp="1570500926803" name="All files">
+    <metrics statements="52" coveredstatements="13" conditionals="16" coveredconditionals="3" methods="9" coveredmethods="4" elements="77" coveredelements="20" complexity="0" loc="52" ncloc="52" packages="1" files="1" classes="1"/>
     <file name="kth.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/ll-kth-from-end/kth.js">
-      <metrics statements="50" coveredstatements="11" conditionals="14" coveredconditionals="1" methods="9" coveredmethods="4"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
+      <metrics statements="52" coveredstatements="13" conditionals="16" coveredconditionals="3" methods="9" coveredmethods="4"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
       <line num="25" count="0" type="stmt"/>
       <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -51,9 +51,11 @@
       <line num="88" count="0" type="stmt"/>
       <line num="91" count="0" type="stmt"/>
       <line num="93" count="0" type="stmt"/>
-      <line num="97" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="97" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="98" count="1" type="stmt"/>
-      <line num="104" count="1" type="stmt"/>
+      <line num="100" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="101" count="1" type="stmt"/>
+      <line num="106" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

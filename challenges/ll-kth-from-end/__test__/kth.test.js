@@ -3,7 +3,7 @@ const { LinkedList } = require('../kth');
 describe('Linked List kth from the end', () => {
 
   describe('kthFromEnd method', () => {
-    it.only('finds where k is greater than length of list', () => {
+    it('finds where k is greater than length of list', () => {
       const list = new LinkedList;
       list.insert('head');
 
@@ -13,7 +13,12 @@ describe('Linked List kth from the end', () => {
     });
 
     it('finds where k and length of list are the same', () => {
-      
+      const list = new LinkedList;
+      list.insert('head');
+
+      expect(() => {
+        list.kthFromEnd(1);
+      }).toThrow('k cannot be same size as list');
     });
     
     it('finds where k is not a positive integer', () => {

@@ -97,7 +97,9 @@ class LinkedList {
     if(k > this.size) {
       throw new Error('k cannot exceed size of list');
     }
-    
+    if(k === this.size) {
+      throw new Error('k cannot be same size as list');
+    }
   }
 }
 
