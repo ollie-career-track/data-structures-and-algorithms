@@ -54,30 +54,25 @@ class LinkedList {
     this.size++;
   }
 
-  // insertBefore(value, newValue) {
-  //   const node = new Node(newValue);
-  //   let current = this.head;
+  insertBefore(value, newValue) {
+    const node = new Node(newValue);
+    let current = this.head;
 
-  //   if(current === null) {
-  //     this.head = node;
-  //   }
-  //   else if(this.head.value === value) {
-  //     node.next = this.head;
-  //     this.head = node;
-  //   }
-  //   else {
-  //     for(let i = 0; i < this.size; i++) {
-  //       if(current.next.value === value) {
-  //         node.next = current.next;
-  //         current.next = node;
-  //       }
-  //       else {
-  //         current = current.next;
-  //       }
-  //     }
-  //   }
-  //   this.size++;
-  // }
+    if(this.head.value === value) {
+      node.next = this.head;
+      this.head = node;
+    }
+    else {
+      for(let i = 0; i < this.size; i++) {
+        if(current.next.value === value) {
+          node.next = current.next;
+          current.next = node;
+        }
+        current = current.next;
+      }
+    }
+    this.size++;
+  }
 
   insertAfter(value, newValue) {
     const node = new Node(newValue);

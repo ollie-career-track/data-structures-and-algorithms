@@ -29,13 +29,27 @@ describe('linked list insertions', () => {
     });
   });
 
-  describe.skip('insertBefore method', () => {
+  describe('insertBefore method', () => {
     it('inserts a node before a node in middle of list', () => {
-      
+      const list = new LinkedList;
+      list.insert('after head');
+      list.insert('head');
+
+      list.insertBefore('after head', 'new value');
+
+      expect(list.size).toBe(3);
+      expect(list.head.next.value).toBe('new value');
     });
 
     it('inserts a node before first node of linked list', () => {
-      
+      const list = new LinkedList;
+      list.insert('after head');
+      list.insert('head');
+
+      list.insertBefore('head', 'new head');
+
+      expect(list.size).toBe(3);
+      expect(list.head.value).toEqual('new head');
     });
   });
 
