@@ -41,8 +41,13 @@ describe('Linked List kth from the end', () => {
     });
 
     it('finds where k is in middle of list', () => {
-    
-    });
+      const list = new LinkedList;
 
+      list.insert('head');
+      list.append('middle');
+      list.append('end');
+
+      expect(list.kthFromEnd(1)).toBe('middle');
+    });
   });
 });

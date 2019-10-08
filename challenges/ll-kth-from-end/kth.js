@@ -106,6 +106,12 @@ class LinkedList {
     if(k === 0) {
       return this.head.value;
     }
+    
+    let current = this.head;
+    for(let i = 0; i < this.size - k - 1; i++) {
+      current = current.next;
+    }
+    return current.value;
   }
 }
 
