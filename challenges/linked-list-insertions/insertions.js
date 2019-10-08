@@ -49,18 +49,54 @@ class LinkedList {
     for(let i = 0; i < this.size - 1; i++) {
       current = current.next;
     }
-    
+
     current ? current.next = node : this.head = node;
     this.size++;
   }
 
   // insertBefore(value, newValue) {
-// 
+  //   const node = new Node(newValue);
+  //   let current = this.head;
+
+  //   if(current === null) {
+  //     this.head = node;
+  //   }
+  //   else if(this.head.value === value) {
+  //     node.next = this.head;
+  //     this.head = node;
+  //   }
+  //   else {
+  //     for(let i = 0; i < this.size; i++) {
+  //       if(current.next.value === value) {
+  //         node.next = current.next;
+  //         current.next = node;
+  //       }
+  //       else {
+  //         current = current.next;
+  //       }
+  //     }
+  //   }
+  //   this.size++;
   // }
-// 
-  // insertAfter(value, newValue) {
-// 
-  // }
+
+  insertAfter(value, newValue) {
+    const node = new Node(newValue);
+    let current = this.head;
+
+    for(let i = 0; i < this.size; i++) {
+      if(current.value === value) {
+        if(!current.next) {
+          current.next = node;
+        }
+        else {
+          node.next = current.next;
+          current.next = node;
+        }
+      }
+      current = current.next;
+    }
+    this.size++;
+  }
 }
 
 module.exports = {
