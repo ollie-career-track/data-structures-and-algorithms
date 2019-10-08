@@ -100,8 +100,11 @@ class LinkedList {
     if(k === this.size) {
       throw new Error('k cannot be same size as list');
     }
-    if(-k) {
+    if(k < 0) {
       throw new Error('k cannot be a negative integer');
+    }
+    if(k === 0) {
+      return this.head.value;
     }
   }
 }

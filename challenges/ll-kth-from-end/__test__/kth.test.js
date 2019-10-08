@@ -31,7 +31,13 @@ describe('Linked List kth from the end', () => {
     });
 
     it('finds where linked list is size of one', () => {
-      
+      const list = new LinkedList;
+      list.insert('head');
+
+      expect(list.kthFromEnd(0)).toBe(list.head.value);
+      expect(() => {
+        list.kthFromEnd(8);
+      }).toThrow('k cannot exceed size of list');
     });
 
     it('finds where k is in middle of list', () => {
@@ -40,7 +46,3 @@ describe('Linked List kth from the end', () => {
 
   });
 });
-
-// kthFromEnd(k)
-// k = a number
-// returns node value that is k from end of ll
