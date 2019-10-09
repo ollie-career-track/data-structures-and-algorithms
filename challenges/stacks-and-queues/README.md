@@ -1,4 +1,4 @@
-# Linked List Kth from the End
+# Stacks and Queues
 
 ## Challenge
 

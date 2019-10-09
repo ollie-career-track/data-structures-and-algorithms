@@ -1,4 +1,4 @@
-# Linked List Kth from the End
+# Linked Lists Merge
 
 ## Challenge
 Write a function that takes two linked lists and merges them into one, alternating nodes from each list.
