@@ -1,19 +1,56 @@
-class PseudoQueue {
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Stack {
   constructor() {
+    this.top = null;
+  }
+
+  // adds new node to top of stack
+  push(value) {
+    return value;
+  }
+
+  // removes node from top of stack
+  // returns value of removed node
+  pop() {
 
   }
 
-  // inserts value into pseudoQueue
+  // returns value of node on top of stack
+  peek() {
+
+  }
+}
+
+class Queue {
+  constructor() {
+    this.front = null;
+  }
+
+  // adds node to back of queue
   enqueue(value) {
     return value;
   }
 
-  // extracts value from pseudoQueue
+  // removes node from front of queue
+  // returns value of removed node
   dequeue() {
+
+  }
+
+  // return value of node in front
+  peek() {
 
   }
 }
 
 module.exports = {
-  PseudoQueue
+  Node,
+  Stack,
+  Queue
 };
