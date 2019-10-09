@@ -1,7 +1,7 @@
 const { Stack, Queue } = require('../stacks-and-queues');
 
 describe('Stacks and Queues', () => {
-  describe.only('Stack and Queue instantiation', () => {
+  describe('Stack and Queue instantiation', () => {
 
     it('creates empty stack upon instantiation', () => {
       const stack = new Stack;
@@ -16,11 +16,20 @@ describe('Stacks and Queues', () => {
   
   describe('Stack push method', () => {
     it('pushes onto top of stack', () => {
+      const stack = new Stack;
+      stack.push('top');
 
+      expect(stack.top.value).toBe('top');
     });
 
     it('can push multiple nodes onto top of stack', () => {
+      const stack = new Stack;
 
+      stack.push(0);
+      stack.push(1);
+      stack.push(2);
+
+      expect(stack.top.value).toBe(2);
     });
   });
 

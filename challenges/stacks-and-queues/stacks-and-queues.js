@@ -12,7 +12,14 @@ class Stack {
 
   // adds new node to top of stack
   push(value) {
-    return value;
+    const node = new Node(value);
+
+    if(!this.top) {
+      this.top = node;
+    }
+
+    node.next = this.top;
+    this.top = node;
   }
 
   // removes node from top of stack
