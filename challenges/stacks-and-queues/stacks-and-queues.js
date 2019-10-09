@@ -10,7 +10,6 @@ class Stack {
     this.top = null;
   }
 
-  // adds new node to top of stack
   push(value) {
     const node = new Node(value);
 
@@ -25,12 +24,12 @@ class Stack {
   // removes node from top of stack
   // returns value of removed node
   pop() {
-
+    
   }
 
   // returns value of node on top of stack
   peek() {
-
+    return this.top.value;
   }
 }
 

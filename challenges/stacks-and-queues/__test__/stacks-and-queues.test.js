@@ -35,7 +35,18 @@ describe('Stacks and Queues', () => {
 
   describe('Stack pop method', () => {
     it('pops node off top of stack', () => {
+      // const stack = new Stack;
 
+      // stack.push(0);
+      // stack.push(1);
+      // stack.push(2);
+
+      // console.log(stack);
+    
+      // stack.pop();
+      // console.log(stack);
+
+      // expect(stack.top).toBe(1);
     });
 
     it('can empty a stack of nodes', () => {
@@ -45,7 +56,10 @@ describe('Stacks and Queues', () => {
 
   describe('Stack peek method', () => {
     it('returns the next value in the stack', () => {
+      const stack = new Stack;
+      stack.push('top');
 
+      expect(stack.peek()).toBe('top');
     });
   });
 
