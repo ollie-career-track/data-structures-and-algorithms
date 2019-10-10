@@ -33,24 +33,20 @@ describe('Stacks and Queues', () => {
     });
   });
 
-  describe('Stack pop method', () => {
+  describe.skip('Stack pop method', () => {
     it('pops node off top of stack', () => {
-      // const stack = new Stack;
+      const stack = new Stack;
 
-      // stack.push(0);
-      // stack.push(1);
-      // stack.push(2);
-
-      // console.log(stack);
-    
-      // stack.pop();
-      // console.log(stack);
-
-      // expect(stack.top).toBe(1);
+      stack.push('A');
+      stack.push('B');
+      stack.push('C');
+      
+      expect(stack.pop()).toBe('C');
+      expect(stack.top.value).toBe('B');
     });
 
     it('can empty a stack of nodes', () => {
-
+  
     });
   });
 
@@ -65,15 +61,26 @@ describe('Stacks and Queues', () => {
 
   describe('Queue enqueue method', () => {
     it('adds a node to back of queue', () => {
+      const queue = new Queue;
+      queue.enqueue('front');
 
+      expect(queue.front.value).toBe('front');
     });
 
     it('can add multiple nodes to back of queue', () => {
+      const queue = new Queue;
 
+      queue.enqueue('front');
+      queue.enqueue('middle');
+      queue.enqueue('back');
+
+      expect(queue.front.value).toBe('front');
+      expect(queue.front.next.value).toBe('middle');
+      expect(queue.front.next.next.value).toBe('back');
     });
   });
 
-  describe('Queue enqueue method', () => {
+  describe('Queue dequeue method', () => {
     it('removes node from front of queue', () => {
 
     });
@@ -85,7 +92,10 @@ describe('Stacks and Queues', () => {
 
   describe('Queue peek method', () => {
     it('returns value of node in front', () => {
+      const queue = new Queue;
+      queue.enqueue('front');
 
+      expect(queue.peek()).toBe('front');
     });
   });
 });

@@ -21,15 +21,12 @@ class Stack {
     this.top = node;
   }
 
-  // removes node from top of stack
-  // returns value of removed node
   pop() {
-    
+    return this.peek();
   }
 
-  // returns value of node on top of stack
   peek() {
-    return this.top.value;
+    return this.top.value ? this.top.value : null;
   }
 }
 
@@ -38,20 +35,33 @@ class Queue {
     this.front = null;
   }
 
-  // adds node to back of queue
   enqueue(value) {
-    return value;
+    const node = new Node(value);
+    let current = this.front;
+
+    if(!current) {
+      this.front = node;
+    }
+    else {
+      while(current.next) {
+        current = current.next;
+      }
+  
+      current.next = node;
+    }
   }
 
   // removes node from front of queue
   // returns value of removed node
   dequeue() {
+    const node = this.peek();
+    // let current = this.front;
 
+    return node;
   }
 
-  // return value of node in front
   peek() {
-
+    return this.front.value ? this.front.value : null;
   }
 }
 
