@@ -33,7 +33,7 @@ describe('Stacks and Queues', () => {
     });
   });
 
-  describe.skip('Stack pop method', () => {
+  describe('Stack pop method', () => {
     it('pops node off top of stack', () => {
       const stack = new Stack;
 
@@ -46,7 +46,18 @@ describe('Stacks and Queues', () => {
     });
 
     it('can empty a stack of nodes', () => {
-  
+      const stack = new Stack;
+
+      stack.push('A');
+      stack.push('B');
+      stack.push('C');
+
+      stack.pop();
+      stack.pop();
+      stack.pop();
+      stack.pop();
+      
+      expect(stack.top).toBe(null);
     });
   });
 

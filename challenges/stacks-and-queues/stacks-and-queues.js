@@ -21,10 +21,30 @@ class Stack {
     this.top = node;
   }
 
-
   pop() {
-    return this.peek();
+    let current = this.top;
+
+    if(!current) {
+      return null;
+    }
+    else if(!current.next) {
+      this.top = null;
+      current.next = null;
+      return current.value;
+    }
+    else {
+      this.top = current.next;
+      current.next = null;
+      return current.value;
+    }
   }
+
+  // if(!current) {
+  //   return null;
+  // }
+  // else {
+  //   this.top = current.next;
+  //   current.next = null;
 
   peek() {
     return this.top.value ? this.top.value : null;
@@ -58,10 +78,9 @@ class Queue {
     if(!current) {
       return null;
     }
-    else {
-      this.front = current.next;
-      return current.value;
-    }
+
+    this.front = current.next;
+    return current.value;
   }
 
   peek() {
