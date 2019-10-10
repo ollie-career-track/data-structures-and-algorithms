@@ -21,6 +21,7 @@ class Stack {
     this.top = node;
   }
 
+
   pop() {
     return this.peek();
   }
@@ -46,18 +47,21 @@ class Queue {
       while(current.next) {
         current = current.next;
       }
-  
+
       current.next = node;
     }
   }
 
-  // removes node from front of queue
-  // returns value of removed node
   dequeue() {
-    const node = this.peek();
-    // let current = this.front;
+    let current = this.front;
 
-    return node;
+    if(!current) {
+      return null;
+    }
+    else {
+      this.front = current.next;
+      return current.value;
+    }
   }
 
   peek() {

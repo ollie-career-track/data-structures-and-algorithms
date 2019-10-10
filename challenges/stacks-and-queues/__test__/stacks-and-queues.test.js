@@ -82,11 +82,29 @@ describe('Stacks and Queues', () => {
 
   describe('Queue dequeue method', () => {
     it('removes node from front of queue', () => {
+      const queue = new Queue;
 
+      queue.enqueue('front');
+      queue.enqueue('back');
+
+      const dequeued = queue.dequeue();      
+
+      expect(queue.front.value).toBe('back');
+      expect(dequeued).toBe('front');
     });
 
     it('can empty a queue', () => {
+      const queue = new Queue;
 
+      queue.enqueue('front');
+      queue.enqueue('middle');
+      queue.enqueue('back');
+
+      queue.dequeue();
+      queue.dequeue();
+      queue.dequeue();
+
+      expect(queue.front).toBe(null);
     });
   });
 
