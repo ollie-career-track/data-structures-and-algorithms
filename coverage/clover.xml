@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570949021075" clover="3.2.0">
-  <project timestamp="1570949021075" name="All files">
-    <metrics statements="55" coveredstatements="15" conditionals="22" coveredconditionals="6" methods="13" coveredmethods="4" elements="90" coveredelements="25" complexity="0" loc="55" ncloc="55" packages="2" files="2" classes="2"/>
+<coverage generated="1570949534000" clover="3.2.0">
+  <project timestamp="1570949534000" name="All files">
+    <metrics statements="55" coveredstatements="21" conditionals="22" coveredconditionals="8" methods="13" coveredmethods="4" elements="90" coveredelements="33" complexity="0" loc="55" ncloc="55" packages="2" files="2" classes="2"/>
     <package name="fifo-animal-shelter">
-      <metrics statements="21" coveredstatements="13" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3"/>
+      <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="3"/>
       <file name="fifo-animal.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/fifo-animal-shelter/fifo-animal.js">
-        <metrics statements="21" coveredstatements="13" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3"/>
+        <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="19" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
       </file>
     </package>
@@ -35,7 +35,7 @@
         <metrics statements="34" coveredstatements="2" conditionals="14" coveredconditionals="0" methods="9" coveredmethods="1"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="17" count="0" type="stmt"/>

@@ -27,7 +27,17 @@ describe('fifo Animal Shelter', () => {
     });
 
     it('Can add multiple animals to the shelter', () => {
+      const shelter = new AnimalShelter;
+
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
       
+      expect(shelter.dog.top.value).toBe('dog');
+      expect(shelter.dog.top.next.value).toBe('dog');
+      expect(shelter.cat.top.value).toBe('cat');
+      expect(shelter.cat.top.next.value).toBe('cat');
     });
   });
 
