@@ -19,7 +19,15 @@ describe('Queue with Stacks PseudoQueue', () => {
     });
 
     it('can add multiple nodes to the back', () => {
+      const pq = new PseudoQueue;
 
+      pq.enqueue('front');
+      pq.enqueue('middle');
+      pq.enqueue('back');
+
+      expect(pq.left.top.value).toBe('front');
+      expect(pq.left.top.next.value).toBe('middle');
+      expect(pq.left.top.next.next.value).toBe('back');
     });
   });
 

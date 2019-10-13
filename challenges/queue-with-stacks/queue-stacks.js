@@ -12,8 +12,15 @@ class PseudoQueue {
     if(!this.left.top) {
       this.left.top = node;
     }
+    else {
+      let current = this.left.top;
 
-    
+      while(current.next) {
+        current = current.next;
+      }
+
+      current.next = node;
+    }
   }
 
   dequeue() {
