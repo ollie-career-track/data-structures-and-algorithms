@@ -9,4 +9,5 @@
 * [Linked List Kth from the End](./challenges/ll-kth-from-end/README.md)
 * [Linked List Merge](./challenges/ll-merge/README.md)
 * [Stacks and Queues](./challenges/stacks-and-queues/README.md)
+* [Queue with Stacks](./challenges/queue-with-stacks/README.md)
 * []()
