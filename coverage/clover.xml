@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570949647488" clover="3.2.0">
-  <project timestamp="1570949647489" name="All files">
-    <metrics statements="57" coveredstatements="23" conditionals="24" coveredconditionals="9" methods="13" coveredmethods="5" elements="94" coveredelements="37" complexity="0" loc="57" ncloc="57" packages="2" files="2" classes="2"/>
+<coverage generated="1570949988557" clover="3.2.0">
+  <project timestamp="1570949988558" name="All files">
+    <metrics statements="65" coveredstatements="31" conditionals="28" coveredconditionals="13" methods="13" coveredmethods="5" elements="106" coveredelements="49" complexity="0" loc="65" ncloc="65" packages="2" files="2" classes="2"/>
     <package name="fifo-animal-shelter">
-      <metrics statements="23" coveredstatements="21" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <metrics statements="31" coveredstatements="29" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4"/>
       <file name="fifo-animal.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/fifo-animal-shelter/fifo-animal.js">
-        <metrics statements="23" coveredstatements="21" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+        <metrics statements="31" coveredstatements="29" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
-        <line num="19" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="19" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="34" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="2" type="stmt"/>
+        <line num="34" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="4" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="51" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="52" count="1" type="stmt"/>
+        <line num="55" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="62" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
       </file>
     </package>
     <package name="stacks-and-queues">
@@ -37,7 +45,7 @@
         <metrics statements="34" coveredstatements="2" conditionals="14" coveredconditionals="0" methods="9" coveredmethods="1"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="17" count="0" type="stmt"/>

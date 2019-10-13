@@ -51,6 +51,20 @@ class AnimalShelter {
     if(!pref) {
       return null;
     }
+
+    if(pref === 'dog') {
+      const dog = this.dog.top.value;
+      this.dog.top = this.dog.top.next;
+
+      return dog;
+    }
+
+    if(pref === 'cat') {
+      const cat = this.cat.top.value;
+      this.cat.top = this.cat.top.next;
+
+      return cat;
+    }
   }
 }
 

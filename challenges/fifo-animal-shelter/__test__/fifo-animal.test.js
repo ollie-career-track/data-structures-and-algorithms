@@ -42,12 +42,30 @@ describe('fifo Animal Shelter', () => {
   });
 
   describe('Dequeue method', () => {
-    it('Removes an animal from the shelter', () => {
+    it('Removes a dog from the shelter', () => {
+      const shelter = new AnimalShelter;
 
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
+
+      const dog = shelter.dequeue('dog');
+
+      expect(dog).toBe('dog');
+    });
+
+    it('Removes a cat from the shelter', () => {
+      const shelter = new AnimalShelter;
+
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
+
+      const cat = shelter.dequeue('cat');
+
+      expect(cat).toBe('cat');
     });
 
     it('Can empty the shelter of animals', () => {
-
+      
     });
 
     it('Returns null in no animal preference', () => {
