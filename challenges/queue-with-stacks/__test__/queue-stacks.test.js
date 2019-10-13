@@ -44,7 +44,18 @@ describe('Queue with Stacks PseudoQueue', () => {
     });
 
     it('can empty a pq of nodes', () => {
+      const pq = new PseudoQueue;
 
+      pq.enqueue('front');
+      pq.enqueue('middle');
+      pq.enqueue('end');
+
+      pq.dequeue();
+      pq.dequeue();
+      pq.dequeue();
+
+      expect(pq.left.top).toBe(null);
+      expect(pq.left.top).toBe(null);
     });
   });
 });
