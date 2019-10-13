@@ -1,6 +1,7 @@
 function bracketValidator(str) {
   let curlyCount = 0;
   let parenCount = 0;
+  let squareCount = 0;
 
   for(let i = 0; i < str.length; i++) {
     if(str[i] === '{') {
@@ -18,9 +19,19 @@ function bracketValidator(str) {
     if(str[i] === ')') {
       parenCount--;
     }
+
+    if(str[i] === '[') {
+      squareCount++;
+    }
+
+    if(str[i] === ']') {
+      squareCount--;
+    }
   }
 
-  if(curlyCount === 0 && parenCount === 0) {
+  const sum = curlyCount + parenCount + squareCount;
+
+  if(sum === 0) {
     return true;
   }
 

@@ -18,7 +18,7 @@ describe('Multi-bracket Validator Function', () => {
     });
   });
 
-  describe.only('parenthesis', () => {
+  describe('parenthesis', () => {
     it('returns true for balanced parenthesis', () => {
       const input = '()';
       const result = bracketValidator(input);
@@ -34,13 +34,19 @@ describe('Multi-bracket Validator Function', () => {
     });
   });
 
-  describe('square brackets', () => {
+  describe.only('square brackets', () => {
     it('returns true for balanced square brackets', () => {
+      const input = '[]';
+      const result = bracketValidator(input);
 
+      expect(result).toBe(true);
     });
 
     it('returns false for unbalanced square brackets', () => {
+      const input = '[';
+      const result = bracketValidator(input);
 
+      expect(result).toBe(false);
     });
   });
 
