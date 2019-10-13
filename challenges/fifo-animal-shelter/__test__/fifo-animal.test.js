@@ -12,12 +12,22 @@ describe('fifo Animal Shelter', () => {
   });
 
   describe('Enqueue method', () => {
-    it('Adds an animal to the shelter', () => {
+    it('Can add a dog to the shelter', () => {
+      const shelter = new AnimalShelter;
+      shelter.enqueue('dog');
 
+      expect(shelter.dog.top.value).toBe('dog');
+    });
+
+    it('Can add a cat to the shelter', () => {
+      const shelter = new AnimalShelter;
+      shelter.enqueue('cat');
+
+      expect(shelter.cat.top.value).toBe('cat');
     });
 
     it('Can add multiple animals to the shelter', () => {
-
+      
     });
   });
 
