@@ -33,10 +33,17 @@ describe('Queue with Stacks PseudoQueue', () => {
 
   describe('PseudoQueue dequeue method', () => {
     it('removes a node from the front of pq', () => {
+      const pq = new PseudoQueue;
+      pq.enqueue('front');
+      pq.enqueue('behind');
 
+      const value = pq.dequeue();
+
+      expect(pq.left.top.value).toBe('behind');
+      expect(value).toBe('front');
     });
 
-    it('removes node from front of queue', () => {
+    it('can empty a pq of nodes', () => {
 
     });
   });

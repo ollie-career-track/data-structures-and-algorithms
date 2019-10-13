@@ -9,22 +9,39 @@ class PseudoQueue {
   enqueue(value) {
     const node = new Node(value);
 
-    if(!this.left.top) {
+    if(!this.left.top && !this.right.top) {
       this.left.top = node;
+      this.right.top = node;
     }
     else {
-      let current = this.left.top;
+      let left = this.left.top;
+      let right = this.right.top;
 
-      while(current.next) {
-        current = current.next;
+      while(left.next && right.next) {
+        left = left.next;
+        right = right.next;
       }
 
-      current.next = node;
+      left.next = node;
+      right.next = node;
     }
   }
 
   dequeue() {
+    let left = this.left.top;
+    let right = this.right.top;
 
+    if(!left && !right) {
+      return null;
+    }
+    else {
+      const value = this.right.top.value;
+
+      this.right.top = this.right.top.next;
+      this.left.top = this.left.top.next;
+
+      return value;
+    }
   }
 }
 
