@@ -10,4 +10,5 @@
 * [Linked List Merge](./challenges/ll-merge/README.md)
 * [Stacks and Queues](./challenges/stacks-and-queues/README.md)
 * [Queue with Stacks](./challenges/queue-with-stacks/README.md)
+* [Fifo Animal Shelter](./challenges/fifo-animal-shelter/README.md)
 * []()

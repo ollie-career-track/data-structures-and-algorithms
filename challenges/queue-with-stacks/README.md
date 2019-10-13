@@ -1,7 +1,7 @@
 # Queue with Stacks
 
 ## Challenge
-Create a `psuedoQueue` class that instantiates with two empty stacks.
+Create a `pseudoQueue` class that instantiates with two empty stacks.
 
 ## Approach & Efficiency
 Same as last time for the most time... I don't know if I did this right, but the methods work.
