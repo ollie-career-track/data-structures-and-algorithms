@@ -1,7 +1,7 @@
 const { bracketValidator } = require('../multi-bracket');
 
 describe('Multi-bracket Validator Function', () => {
-  describe.only('curly braces', () => {
+  describe('curly braces', () => {
 
     it('returns true for balanced curly braces', () => {
       const input = '{}';
@@ -18,13 +18,19 @@ describe('Multi-bracket Validator Function', () => {
     });
   });
 
-  describe('parenthesis', () => {
+  describe.only('parenthesis', () => {
     it('returns true for balanced parenthesis', () => {
+      const input = '()';
+      const result = bracketValidator(input);
 
+      expect(result).toBe(true);
     });
 
     it('returns false for unbalanced parenthesis', () => {
+      const input = '(';
+      const result = bracketValidator(input);
 
+      expect(result).toBe(false);
     });
   });
 

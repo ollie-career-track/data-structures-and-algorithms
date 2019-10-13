@@ -1,5 +1,6 @@
 function bracketValidator(str) {
   let curlyCount = 0;
+  let parenCount = 0;
 
   for(let i = 0; i < str.length; i++) {
     if(str[i] === '{') {
@@ -9,9 +10,17 @@ function bracketValidator(str) {
     if(str[i] === '}') {
       curlyCount--;
     }
+
+    if(str[i] === '(') {
+      parenCount++;
+    }
+
+    if(str[i] === ')') {
+      parenCount--;
+    }
   }
 
-  if(curlyCount === 0) {
+  if(curlyCount === 0 && parenCount === 0) {
     return true;
   }
 
