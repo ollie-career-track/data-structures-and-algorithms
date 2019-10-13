@@ -51,7 +51,10 @@ describe('fifo Animal Shelter', () => {
     });
 
     it('Returns null in no animal preference', () => {
+      const shelter = new AnimalShelter;
+      const value = shelter.dequeue();
 
+      expect(value).toBe(null);
     });
   });
 });

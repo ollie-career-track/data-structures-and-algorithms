@@ -47,8 +47,10 @@ class AnimalShelter {
     }
   }
 
-  dequeue() {
-
+  dequeue(pref) {
+    if(!pref) {
+      return null;
+    }
   }
 }
 
