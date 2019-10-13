@@ -9,7 +9,11 @@ class PseudoQueue {
   enqueue(value) {
     const node = new Node(value);
 
-    return node;
+    if(!this.left.top) {
+      this.left.top = node;
+    }
+
+    
   }
 
   dequeue() {

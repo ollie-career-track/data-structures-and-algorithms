@@ -4,8 +4,7 @@ describe('Queue with Stacks PseudoQueue', () => {
   describe('Empty instantiation', () => {
     it('creates an empty pq', () => {
       const pq = new PseudoQueue;
-      console.log(pq);
-
+      
       expect(pq.left.top).toBe(null);
       expect(pq.right.top).toBe(null);
     });
@@ -13,7 +12,10 @@ describe('Queue with Stacks PseudoQueue', () => {
 
   describe('PseudoQueue enqueue method', () => {
     it('adds a node to the back of the pq', () => {
+      const pq = new PseudoQueue;
+      pq.enqueue('front');
 
+      expect(pq.left.top.value).toBe('front');
     });
 
     it('can add multiple nodes to the back', () => {
