@@ -65,7 +65,20 @@ describe('fifo Animal Shelter', () => {
     });
 
     it('Can empty the shelter of animals', () => {
-      
+      const shelter = new AnimalShelter;
+
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
+      shelter.enqueue('dog');
+      shelter.enqueue('cat');
+
+      shelter.dequeue('dog');
+      shelter.dequeue('dog');
+      shelter.dequeue('cat');
+      shelter.dequeue('cat');
+
+      expect(shelter.dog.top).toBe(null);
+      expect(shelter.cat.top).toBe(null);
     });
 
     it('Returns null in no animal preference', () => {
