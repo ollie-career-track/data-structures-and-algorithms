@@ -1,10 +1,13 @@
-// import...
+const { AnimalShelter } = require('../fifo-animal');
 
 describe('fifo Animal Shelter', () => {
   describe('Empty animal shelter queue', () => {
 
     it('instantiates an empty animal shelter queue', () => {
+      const shelter = new AnimalShelter;
 
+      expect(shelter.dog.top).toBe(null);
+      expect(shelter.cat.top).toBe(null);
     });
   });
 
