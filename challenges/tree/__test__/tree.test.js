@@ -11,7 +11,10 @@ describe('Trees', () => {
       });
 
       it('can add single root node', () => {
-        
+        const bt = new BinaryTree;
+        bt.add('root');
+
+        expect(bt.root.value).toBe('root');
       });
 
       it('can add left and right child to root node', () => {
@@ -44,7 +47,10 @@ describe('Trees', () => {
       });
       
       it('can add single root node', () => {
-        
+        const bst = new BinarySearchTree;
+        bst.add('root');
+
+        expect(bst.root.value).toBe('root');
       });
 
       it('can add left and right child to root node', () => {

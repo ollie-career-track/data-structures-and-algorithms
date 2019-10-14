@@ -12,7 +12,11 @@ class BinarySearchTree {
   }
 
   add(value) {
-    return value;
+    const node = new Node(value);
+
+    if(!this.root) {
+      this.root = node;
+    }
   }
 
   contains(value) {
