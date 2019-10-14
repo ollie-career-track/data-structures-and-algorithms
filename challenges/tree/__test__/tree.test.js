@@ -74,17 +74,29 @@ describe('Trees', () => {
       });
     });
 
-    describe('binary search tree methods', () => {
-      it('add method adds node in correct location', () => {
-
-      }); 
-
+    describe('binary search tree contains method', () => {
       it('contains method returns true for value in tree', () => {
+        const bst = new BinarySearchTree;
 
+        bst.add(7);
+        bst.add(3);
+        bst.add(9);
+
+        const result = bst.contains(9);
+
+        expect(result).toBe(true);
       }); 
 
       it('contains method returns false for value not in tree', () => {
+        const bst = new BinarySearchTree;
 
+        bst.add(3);
+        bst.add(1);
+        bst.add(5);
+
+        const result = bst.contains(8);
+
+        expect(result).toBe(false);
       }); 
     });
   });

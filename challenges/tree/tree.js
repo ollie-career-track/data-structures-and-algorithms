@@ -39,29 +39,30 @@ class BinarySearchTree {
     }
   }
 
-  // screenshot(node) {
-  //   if(node.value < this.value) {
-
-  //     if(this.left) {
-  //       this.left.add(node);
-  //     }
-  //     else {
-  //       this.left = node;
-  //     }
-  //   }
-  //   else if(node.value > this.value) {
-
-  //     if(this.right) {
-  //       this.right.add(node);
-  //     }
-  //     else {
-  //       this.right = node;
-  //     }
-  //   }
-  // }
-
   contains(value) {
-    return value;
+    let current = this.root;
+
+    while(current) {
+      if(current.value === value) {
+        return true;
+      }
+      
+      if(value < current.value) {
+        if(!current.left) {
+          return false;
+        }
+
+        current = current.left;
+      }
+      
+      if(value > current.value) {
+        if(!current.right) {
+          return false;
+        }
+
+        current = current.right;
+      }
+    }
   }
 }
 
