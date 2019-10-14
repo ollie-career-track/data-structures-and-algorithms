@@ -18,7 +18,15 @@ describe('Trees', () => {
       });
 
       it('can add left and right child to root node', () => {
+        const bt = new BinaryTree;
 
+        bt.add(8);
+        bt.add(4);
+        bt.add(10);
+
+        expect(bt.root.value).toBe(8);
+        expect(bt.root.left.value).toBe(4);
+        expect(bt.root.right.value).toBe(10);
       });
     });
 
@@ -54,7 +62,15 @@ describe('Trees', () => {
       });
 
       it('can add left and right child to root node', () => {
+        const bst = new BinarySearchTree;
 
+        bst.add(5);
+        bst.add(2);
+        bst.add(8);
+
+        expect(bst.root.value).toBe(5);
+        expect(bst.root.left.value).toBe(2);
+        expect(bst.root.right.value).toBe(8);
       });
     });
 
