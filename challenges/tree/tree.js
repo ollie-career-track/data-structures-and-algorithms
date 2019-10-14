@@ -6,8 +6,22 @@ class Node {
   }
 }
 
-class BinaryTree {
+class BinarySearchTree {
   constructor() {
+    this.root = null;
+  }
+
+  add(value) {
+    return value;
+  }
+
+  contains(value) {
+    return value;
+  }
+}
+
+class BinaryTree extends BinarySearchTree {
+  super() {
     this.root = null;
   }
 
@@ -21,20 +35,6 @@ class BinaryTree {
 
   inOrder() {
 
-  }
-}
-
-class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
-
-  add(value) {
-    return value;
-  }
-
-  contains(value) {
-    return value;
   }
 }
 
