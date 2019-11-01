@@ -13,4 +13,5 @@
 * [Fifo Animal Shelter](./challenges/fifo-animal-shelter/README.md)
 * [Multi-Bracket Validation](./challenges/multi-bracket-validation/README.md)
 * [Tree](./challenges/tree/README.md)
+* [Fizzbuzz Tree](./challenges/fizzbuzz-tree/README.md)
 * []()
