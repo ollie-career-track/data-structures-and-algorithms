@@ -100,6 +100,15 @@ class BinaryTree extends BinarySearchTree {
   inOrder() {
     const inOrder = [];
 
+    const inRecursion = root => {
+      if(root !== null) {
+        inRecursion(root.left);
+        inOrder.push(root.value);
+        inRecursion(root.right);
+      }
+    };
+
+    inRecursion(this.root);
     return inOrder;
   }
 }

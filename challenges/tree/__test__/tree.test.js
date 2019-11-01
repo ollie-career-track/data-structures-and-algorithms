@@ -48,16 +48,29 @@ describe('Trees', () => {
         expect(result).toEqual([4, 2, 1, 8, 5, 6, 10]);
       });
 
-      it('inOrder transversal returns an ordered collection', () => {
-        
+      it.only('inOrder transversal returns an ordered collection', () => {
+        const bt = new BinaryTree;
+        bt.add(4);
+
+        bt.add(2);
+        bt.add(8);
+
+        bt.add(1);
+        bt.add(5);
+
+        bt.add(6);
+        bt.add(10);
+
+        const result = bt.inOrder();
+        expect(result).toEqual([1, 2, 4, 5, 6, 8, 10]);
       });
 
       it('postOrder transversal returns an ordered collection', () => {
-        
+
       });
     });
   });
-  
+
   describe('Binary Search Tree', () => {
     describe('Binary Search Tree Instantiation', () => {
 
@@ -66,7 +79,7 @@ describe('Trees', () => {
 
         expect(bst.root).toBe(null);
       });
-      
+
       it('can add single root node', () => {
         const bst = new BinarySearchTree;
         bst.add('root');
@@ -98,7 +111,7 @@ describe('Trees', () => {
         const result = bst.contains(9);
 
         expect(result).toBe(true);
-      }); 
+      });
 
       it('contains method returns false for value not in tree', () => {
         const bst = new BinarySearchTree;
@@ -110,7 +123,7 @@ describe('Trees', () => {
         const result = bst.contains(8);
 
         expect(result).toBe(false);
-      }); 
+      });
     });
   });
 });
