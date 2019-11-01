@@ -11,34 +11,6 @@ class BinarySearchTree {
     this.root = null;
   }
 
-  // add(value) {
-  //   const node = new Node(value);
-
-  //   if(!this.root) {
-  //     this.root = node;
-  //   }
-  //   else {
-  //     let current = this.root;
-
-  //     while(current) {
-  //       if(node.value < current.value) {
-
-  //         if(!current.left) {
-  //           current.left = node;
-  //           current = null;
-  //         }
-  //       }
-  //       else if(node.value > current.value) {
-
-  //         if(!current.right) {
-  //           current.right = node;
-  //           current = null;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   add(value) {
     const node = new Node(value);
 
@@ -101,15 +73,34 @@ class BinaryTree extends BinarySearchTree {
   }
 
   preOrder() {
+    const preOrder = [];
 
+    const preRecursion = root => {
+      preOrder.push(root.value);
+
+      if(root.left) {
+        preRecursion(root.left);
+      }
+      
+      if(root.right) {
+        preRecursion(root.right);
+      }
+    };
+
+    preRecursion(this.root);
+    return preOrder;
   }
 
   postOrder() {
+    const postOrder = [];
 
+    return postOrder;
   }
 
   inOrder() {
+    const inOrder = [];
 
+    return inOrder;
   }
 }
 
