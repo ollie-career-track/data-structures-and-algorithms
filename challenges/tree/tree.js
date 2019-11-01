@@ -11,32 +11,61 @@ class BinarySearchTree {
     this.root = null;
   }
 
+  // add(value) {
+  //   const node = new Node(value);
+
+  //   if(!this.root) {
+  //     this.root = node;
+  //   }
+  //   else {
+  //     let current = this.root;
+
+  //     while(current) {
+  //       if(node.value < current.value) {
+
+  //         if(!current.left) {
+  //           current.left = node;
+  //           current = null;
+  //         }
+  //       }
+  //       else if(node.value > current.value) {
+
+  //         if(!current.right) {
+  //           current.right = node;
+  //           current = null;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
   add(value) {
     const node = new Node(value);
 
     if(!this.root) {
       this.root = node;
     }
-    else {
-      let current = this.root;
 
-      while(current) {
-        if(node.value < current.value) {
+    const current = this.root;
 
-          if(!current.left) {
-            current.left = node;
-            current = null;
-          }
+    const recursive = currentNode => {
+      if(node.value < currentNode.value) {
+        if(!currentNode.left) {
+          currentNode.left = node;
         }
-        else if(node.value > current.value) {
-    
-          if(!current.right) {
-            current.right = node;
-            current = null;
-          }
-        }
+
+        recursive(currentNode.left);
       }
-    }
+      else if(node.value > currentNode.value) {
+        if(!currentNode.right) {
+          currentNode.right = node;
+        }
+
+        recursive(currentNode.right);
+      }
+    };
+
+    recursive(current);
   }
 
   contains(value) {
@@ -46,7 +75,7 @@ class BinarySearchTree {
       if(current.value === value) {
         return true;
       }
-      
+
       if(value < current.value) {
         if(!current.left) {
           return false;
@@ -54,7 +83,7 @@ class BinarySearchTree {
 
         current = current.left;
       }
-      
+
       if(value > current.value) {
         if(!current.right) {
           return false;

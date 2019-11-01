@@ -32,15 +32,28 @@ describe('Trees', () => {
 
     describe('depth first transversal', () => {
       it('preOrder transversal returns an ordered collection', () => {
-
+        const bt = new BinaryTree;
+        
+        bt.add(4);
+        bt.add(2);
+        bt.add(8);
+        
+        bt.add(1);
+        bt.add(5);
+        
+        bt.add(6);
+        bt.add(10);
+        
+        // const result = bt.preOrder();
+        // expect(result).toBe([]);
       });
 
       it('inOrder transversal returns an ordered collection', () => {
-
+        
       });
 
       it('postOrder transversal returns an ordered collection', () => {
-
+        
       });
     });
   });
