@@ -94,6 +94,15 @@ class BinaryTree extends BinarySearchTree {
   postOrder() {
     const postOrder = [];
 
+    const postRecursion = root => {
+      if(root !== null) {
+        postRecursion(root.left);
+        postRecursion(root.right);
+        postOrder.push(root.value);
+      }
+    };
+
+    postRecursion(this.root);
     return postOrder;
   }
 

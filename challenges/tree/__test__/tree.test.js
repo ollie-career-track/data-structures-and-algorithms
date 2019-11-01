@@ -48,7 +48,7 @@ describe('Trees', () => {
         expect(result).toEqual([4, 2, 1, 8, 5, 6, 10]);
       });
 
-      it.only('inOrder transversal returns an ordered collection', () => {
+      it('inOrder transversal returns an ordered collection', () => {
         const bt = new BinaryTree;
         bt.add(4);
 
@@ -66,7 +66,20 @@ describe('Trees', () => {
       });
 
       it('postOrder transversal returns an ordered collection', () => {
+        const bt = new BinaryTree;
+        bt.add(4);
 
+        bt.add(2);
+        bt.add(8);
+
+        bt.add(1);
+        bt.add(5);
+
+        bt.add(6);
+        bt.add(10);
+
+        const result = bt.postOrder();
+        expect(result).toEqual([1, 2, 6, 5, 10, 8, 4]);
       });
     });
   });
