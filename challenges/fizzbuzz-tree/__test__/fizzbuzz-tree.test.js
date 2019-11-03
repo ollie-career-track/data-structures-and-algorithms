@@ -4,7 +4,7 @@ const { BinaryTree } = require('../../tree/tree');
 describe('fizzBuzzTree function', () => {
   describe('Values divisible by 3', () => {
 
-    it('returns a tree with fizz values', () => {
+    it.only('returns a tree with fizz values', () => {
       const tree = new BinaryTree;
 
       tree.add(6);
