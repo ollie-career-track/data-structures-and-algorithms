@@ -1,6 +1,6 @@
 module.exports = function fizzBuzzTree(tree) {
-
   const inOrderRecursion = root => {
+
     if(root !== null) {
       inOrderRecursion(root.left);
 
@@ -19,8 +19,5 @@ module.exports = function fizzBuzzTree(tree) {
   };
 
   inOrderRecursion(tree.root);
-
   return tree;
 };
-
-// if node value is divisible by 3 and 5, node value = FizzBuzz

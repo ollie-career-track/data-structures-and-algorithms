@@ -36,7 +36,7 @@ describe('fizzBuzzTree function', () => {
   });
 
   describe('Values divisible by 3 and 5', () => {
-    it.only('returns a tree with fizzbuzz values', () => {
+    it('returns a tree with fizzbuzz values', () => {
       const tree = new BinaryTree;
 
       tree.add(30);
@@ -53,7 +53,36 @@ describe('fizzBuzzTree function', () => {
 
   describe('Tree with multiple values', () => {
     it('returns tree with fizz, buzz, and fizzbuzz values', () => {
+      const tree = new BinaryTree;
       
+      tree.add(10);
+
+      tree.add(6);
+      tree.add(20);
+
+      tree.add(5);
+      tree.add(9);
+
+      tree.add(15);
+      tree.add(30);
+
+      tree.add(3);
+      tree.add(60);
+
+      const result = fizzBuzzTree(tree);
+      expect(result.root.value).toBe('Buzz');
+
+      expect(result.root.left.value).toBe('Fizz');
+      expect(result.root.right.value).toBe('Buzz');
+      
+      expect(result.root.left.left.value).toBe('Buzz');
+      expect(result.root.left.right.value).toBe('Fizz');
+
+      expect(result.root.right.left.value).toBe('FizzBuzz');
+      expect(result.root.right.right.value).toBe('FizzBuzz');
+
+      expect(result.root.left.left.left.value).toBe('Fizz');
+      expect(result.root.right.right.right.value).toBe('FizzBuzz');
     });
   });
 });
