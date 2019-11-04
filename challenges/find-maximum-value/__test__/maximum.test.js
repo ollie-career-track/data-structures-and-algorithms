@@ -2,7 +2,7 @@ const { BinaryTree } = require('../../tree/tree');
 const findMaximumValue = require('../maximum');
 
 describe('findMaximumValue function', () => {
-  it('returns the maximum value in a binary tree', () => {
+  it('returns the maximum value in a sorted binary tree', () => {
     const tree = new BinaryTree;
 
     tree.add(10);
