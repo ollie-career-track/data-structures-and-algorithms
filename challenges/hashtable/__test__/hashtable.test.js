@@ -1,10 +1,11 @@
-// const Hashtable = require('../hashtable');
+const Hashtable = require('../hashtable');
 
 describe('Hashtable class', () => {
   describe('Instantiation', () => {
 
-    it('can instantiate an empty hashtable', () => {
-
+    it.only('can instantiate an empty hashtable', () => {
+      const hashtable = new Hashtable;
+      expect(hashtable.arr.length).toBe(20);
     });
   });
 
