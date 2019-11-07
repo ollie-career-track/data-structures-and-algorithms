@@ -4,16 +4,25 @@ module.exports = class Hashtable {
     this.arr = new Array(buckets).fill([]);
   }
 
-  add(key, value) {
-    return key + value;
-    // hash key
+  // hash key
     // add key and value to table
-      // handles collisions
+    // handles collisions
+  add(key, value) {
+    const index = this.hash(key);
+    this.arr[index] = [key, value];
   }
 
   get(key) {
     return key;
-    // returns value from table
+    // const bucket = this.arr[this.hash(key)];
+
+    // for(let i = 0; i < bucket.length; i++) {
+    //   if(bucket[i][0] === key) {
+    //     return bucket[i][1];
+    //   }
+    // }
+
+    // return null;
   }
 
   contains(key) {
@@ -23,7 +32,6 @@ module.exports = class Hashtable {
       // false if key is not in table
   }
 
-  // returns index in collection
   hash(key) {
     return key.split('')
       .reduce((acc, letter, i) => {

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573169933014" clover="3.2.0">
-  <project timestamp="1573169933014" name="All files">
-    <metrics statements="8" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="3" elements="15" coveredelements="9" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+<coverage generated="1573170904317" clover="3.2.0">
+  <project timestamp="1573170904317" name="All files">
+    <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="4" elements="16" coveredelements="12" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="hashtable.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/hashtable/hashtable.js">
-      <metrics statements="8" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="3"/>
+      <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="15" count="0" type="stmt"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="30" count="3" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="38" count="4" type="stmt"/>
     </file>
   </project>
 </coverage>

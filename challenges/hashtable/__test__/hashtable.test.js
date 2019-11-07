@@ -10,8 +10,11 @@ describe('Hashtable class', () => {
   });
 
   describe('Add method', () => {
-    it('adds a value to the hashtable', () => {
-
+    it.only('adds a value to the hashtable', () => {
+      const hashtable = new Hashtable;
+      hashtable.add('name', 'ollie');
+      
+      expect(hashtable.arr[3]).toEqual(['name', 'ollie']);
     });
 
     it('can add multiple values to the hashtable', () => {
@@ -48,11 +51,11 @@ describe('Hashtable class', () => {
   });
 
   describe('Hash method', () => {
-    it.only('hashes a key to an in-range value', () => {
+    it('hashes a key to an in-range value', () => {
       const hashtable = new Hashtable;
       const key = hashtable.hash('key');
 
-      expect(key < 21).toBe(true);
+      expect(key < 19).toBe(true);
       expect(key > -1).toBe(true);
     });
   });
