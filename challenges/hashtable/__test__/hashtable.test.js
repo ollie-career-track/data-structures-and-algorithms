@@ -3,31 +3,51 @@
 describe('Hashtable class', () => {
   describe('Instantiation', () => {
 
-    it('', () => {
+    it('can instantiate an empty hashtable', () => {
 
     });
   });
 
   describe('Add method', () => {
-    it('', () => {
+    it('adds a value to the hashtable', () => {
+
+    });
+
+    it('can add multiple values to the hashtable', () => {
+
+    });
+
+    it('can handle a collision', () => {
 
     });
   });
 
   describe('Get method', () => {
-    it('', () => {
+    it('returns value from a bucket in hashtable based on key', () => {
+
+    });
+
+    it('can retrieve a value from a bucket that has a collision', () => {
+
+    });
+
+    it('returns null for value not stored in hashtable', () => {
 
     });
   });
 
   describe('Contains method', () => {
-    it('', () => {
+    it('returns true for key stored in hashtable', () => {
+
+    });
+
+    it('returns null for key not in hashtable', () => {
 
     });
   });
 
   describe('Hash method', () => {
-    it('', () => {
+    it('hashes a key to an in-range value', () => {
 
     });
   });
