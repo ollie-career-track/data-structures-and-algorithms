@@ -1,5 +1,6 @@
 module.exports = class Hashtable {
   constructor(buckets = 20) {
+    this.hashSize = buckets;
     this.arr = new Array(buckets).fill([]);
   }
 
@@ -22,8 +23,12 @@ module.exports = class Hashtable {
       // false if key is not in table
   }
 
+  // returns index in collection
   hash(key) {
-    return key;
-    // returns index in collection
+    return key.split('')
+      .reduce((acc, letter, i) => {
+        return acc += letter.charCodeAt(0) + i;
+      }, 0)
+      % this.hashSize;
   }
 };

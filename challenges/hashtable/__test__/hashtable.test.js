@@ -3,7 +3,7 @@ const Hashtable = require('../hashtable');
 describe('Hashtable class', () => {
   describe('Instantiation', () => {
 
-    it.only('can instantiate an empty hashtable', () => {
+    it('can instantiate an empty hashtable', () => {
       const hashtable = new Hashtable;
       expect(hashtable.arr.length).toBe(20);
     });
@@ -48,8 +48,12 @@ describe('Hashtable class', () => {
   });
 
   describe('Hash method', () => {
-    it('hashes a key to an in-range value', () => {
+    it.only('hashes a key to an in-range value', () => {
+      const hashtable = new Hashtable;
+      const key = hashtable.hash('key');
 
+      expect(key < 21).toBe(true);
+      expect(key > -1).toBe(true);
     });
   });
 });
