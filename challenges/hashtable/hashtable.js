@@ -22,11 +22,17 @@ module.exports = class Hashtable {
     return null;
   }
 
-  contains(key) {
-    return key;
-    // returns boolean 
+  // returns boolean 
     // true if key is in table
     // false if key is not in table
+  contains(key) {
+    for(let i = 0; i < this.arr.length; i++) {
+      if(this.arr[i][0] === key) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   hash(key) {
