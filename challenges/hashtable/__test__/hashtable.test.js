@@ -10,14 +10,14 @@ describe('Hashtable class', () => {
   });
 
   describe('Add method', () => {
-    it('adds a value to the hashtable', () => {
+    it.only('adds a value to the hashtable', () => {
       const hashtable = new Hashtable;
       hashtable.add('name', 'ollie');
       
-      expect(hashtable.arr[3]).toEqual(['name', 'ollie']);
+      expect(hashtable.arr[3][0]).toEqual(['name', 'ollie']);
     });
 
-    it.only('can add multiple values to the hashtable', () => {
+    it('can add multiple values to the hashtable', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
@@ -29,7 +29,7 @@ describe('Hashtable class', () => {
       expect(hashtable.contains('tired')).toBe(true);
     });
 
-    it('can handle a collision', () => {
+    it('can handle a collision by overwriting value assigned to key', () => {
 
     });
   });
@@ -45,7 +45,15 @@ describe('Hashtable class', () => {
     });
 
     it('can retrieve a value from a bucket that has a collision', () => {
+      const hashtable = new Hashtable;
 
+      hashtable.add('name', 'ollie');
+      hashtable.add('name', 'not ollie');
+
+      console.log(hashtable.arr);
+
+      const result = hashtable.get('name');
+      expect(result).toBe('not ollie');
     });
 
     it('returns null for value not stored in hashtable', () => {

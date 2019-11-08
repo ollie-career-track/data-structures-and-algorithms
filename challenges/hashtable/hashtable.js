@@ -7,7 +7,7 @@ module.exports = class Hashtable {
   // handles collisions
   add(key, value) {
     const index = this.hash(key);
-    this.arr[index] = [key, value];
+    this.arr[index] = [[key, value]];
   }
 
   get(key) {
