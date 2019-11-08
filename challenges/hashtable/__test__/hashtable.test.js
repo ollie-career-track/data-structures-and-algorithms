@@ -30,12 +30,17 @@ describe('Hashtable class', () => {
     });
 
     it('can handle a collision by overwriting value assigned to key', () => {
+      const hashtable = new Hashtable;
 
+      hashtable.add('name', 'ollie');
+      hashtable.add('name', 'not ollie');
+
+      expect(hashtable.arr[3][0]).toEqual(['name', 'not ollie']);
     });
   });
 
   describe('Get method', () => {
-    it.only('returns value from a bucket in hashtable based on key', () => {
+    it('returns value from a bucket in hashtable based on key', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
@@ -49,8 +54,6 @@ describe('Hashtable class', () => {
 
       hashtable.add('name', 'ollie');
       hashtable.add('name', 'not ollie');
-
-      console.log(hashtable.arr);
 
       const result = hashtable.get('name');
       expect(result).toBe('not ollie');

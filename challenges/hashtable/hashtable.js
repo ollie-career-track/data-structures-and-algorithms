@@ -4,7 +4,6 @@ module.exports = class Hashtable {
     this.arr = new Array(buckets).fill([]);
   }
 
-  // handles collisions
   add(key, value) {
     const index = this.hash(key);
     this.arr[index] = [[key, value]];
