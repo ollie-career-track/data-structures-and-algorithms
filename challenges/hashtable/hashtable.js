@@ -14,8 +14,8 @@ module.exports = class Hashtable {
     const bucket = this.arr[this.hash(key)];
     
     for(let i = 0; i < bucket.length; i++) {
-      if(bucket[i] === key) {
-        return (bucket[i + 1]);
+      if(bucket[i][0] === key) {
+        return (bucket[i][1]);
       }
     }
     return null;

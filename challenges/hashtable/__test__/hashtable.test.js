@@ -17,7 +17,7 @@ describe('Hashtable class', () => {
       expect(hashtable.arr[3][0]).toEqual(['name', 'ollie']);
     });
 
-    it.only('can add multiple values to the hashtable', () => {
+    it('can add multiple values to the hashtable', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
@@ -35,7 +35,7 @@ describe('Hashtable class', () => {
   });
 
   describe('Get method', () => {
-    it('returns value from a bucket in hashtable based on key', () => {
+    it.only('returns value from a bucket in hashtable based on key', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
