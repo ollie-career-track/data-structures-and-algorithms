@@ -26,8 +26,8 @@ describe('Hashtable class', () => {
     });
   });
 
-  describe('Get method', () => {
-    it.only('returns value from a bucket in hashtable based on key', () => {
+  describe.only('Get method', () => {
+    it('returns value from a bucket in hashtable based on key', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
@@ -41,7 +41,12 @@ describe('Hashtable class', () => {
     });
 
     it('returns null for value not stored in hashtable', () => {
+      const hashtable = new Hashtable;
 
+      hashtable.add('name', 'ollie');
+      const result = hashtable.get('age');
+
+      expect(result).toBe(null);
     });
   });
 
