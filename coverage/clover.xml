@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573170904317" clover="3.2.0">
-  <project timestamp="1573170904317" name="All files">
-    <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="4" elements="16" coveredelements="12" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+<coverage generated="1573171670479" clover="3.2.0">
+  <project timestamp="1573171670480" name="All files">
+    <metrics statements="13" coveredstatements="11" conditionals="3" coveredconditionals="2" methods="6" coveredmethods="5" elements="22" coveredelements="18" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="hashtable.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/hashtable/hashtable.js">
-      <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="4"/>
+      <metrics statements="13" coveredstatements="11" conditionals="3" coveredconditionals="2" methods="6" coveredmethods="5"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
-      <line num="38" count="4" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="36" count="8" type="stmt"/>
     </file>
   </project>
 </coverage>

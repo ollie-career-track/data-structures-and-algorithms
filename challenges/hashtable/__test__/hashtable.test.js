@@ -10,7 +10,7 @@ describe('Hashtable class', () => {
   });
 
   describe('Add method', () => {
-    it.only('adds a value to the hashtable', () => {
+    it('adds a value to the hashtable', () => {
       const hashtable = new Hashtable;
       hashtable.add('name', 'ollie');
       
@@ -18,7 +18,7 @@ describe('Hashtable class', () => {
     });
 
     it('can add multiple values to the hashtable', () => {
-
+      
     });
 
     it('can handle a collision', () => {
@@ -27,8 +27,13 @@ describe('Hashtable class', () => {
   });
 
   describe('Get method', () => {
-    it('returns value from a bucket in hashtable based on key', () => {
+    it.only('returns value from a bucket in hashtable based on key', () => {
+      const hashtable = new Hashtable;
 
+      hashtable.add('name', 'ollie');
+      const result = hashtable.get('name');
+
+      expect(result).toBe('ollie');
     });
 
     it('can retrieve a value from a bucket that has a collision', () => {
