@@ -10,14 +10,14 @@ describe('Hashtable class', () => {
   });
 
   describe('Add method', () => {
-    it.only('adds a value to the hashtable', () => {
+    it('adds a value to the hashtable', () => {
       const hashtable = new Hashtable;
       hashtable.add('name', 'ollie');
       
       expect(hashtable.arr[3][0]).toEqual(['name', 'ollie']);
     });
 
-    it('can add multiple values to the hashtable', () => {
+    it.only('can add multiple values to the hashtable', () => {
       const hashtable = new Hashtable;
 
       hashtable.add('name', 'ollie');
