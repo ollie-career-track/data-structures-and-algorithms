@@ -17,8 +17,16 @@ describe('Hashtable class', () => {
       expect(hashtable.arr[3]).toEqual(['name', 'ollie']);
     });
 
-    it('can add multiple values to the hashtable', () => {
-      
+    it.only('can add multiple values to the hashtable', () => {
+      const hashtable = new Hashtable;
+
+      hashtable.add('name', 'ollie');
+      hashtable.add('eyes', 'brown');
+      hashtable.add('tired', true);
+
+      expect(hashtable.contains('name')).toBe(true);
+      expect(hashtable.contains('eyes')).toBe(true);
+      expect(hashtable.contains('tired')).toBe(true);
     });
 
     it('can handle a collision', () => {
@@ -50,7 +58,7 @@ describe('Hashtable class', () => {
     });
   });
 
-  describe.only('Contains method', () => {
+  describe('Contains method', () => {
     it('returns true for key stored in hashtable', () => {
       const hashtable = new Hashtable;
 

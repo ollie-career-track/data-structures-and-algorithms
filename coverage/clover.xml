@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573172243990" clover="3.2.0">
-  <project timestamp="1573172243990" name="All files">
-    <metrics statements="16" coveredstatements="11" conditionals="5" coveredconditionals="3" methods="6" coveredmethods="5" elements="27" coveredelements="19" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+<coverage generated="1573172436460" clover="3.2.0">
+  <project timestamp="1573172436460" name="All files">
+    <metrics statements="16" coveredstatements="10" conditionals="5" coveredconditionals="3" methods="6" coveredmethods="5" elements="27" coveredelements="18" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
     <file name="hashtable.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/hashtable/hashtable.js">
-      <metrics statements="16" coveredstatements="11" conditionals="5" coveredconditionals="3" methods="6" coveredmethods="5"/>
+      <metrics statements="16" coveredstatements="10" conditionals="5" coveredconditionals="3" methods="6" coveredmethods="5"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
       <line num="14" count="0" type="stmt"/>
       <line num="16" count="0" type="stmt"/>
       <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="18" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
-      <line num="30" count="24" type="cond" truecount="2" falsecount="0"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="39" count="2" type="stmt"/>
-      <line num="41" count="8" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="26" count="16" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="3" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="36" count="13" type="stmt"/>
     </file>
   </project>
 </coverage>
