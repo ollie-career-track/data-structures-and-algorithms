@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573258905174" clover="3.2.0">
-  <project timestamp="1573258905174" name="All files">
+<coverage generated="1573259362656" clover="3.2.0">
+  <project timestamp="1573259362656" name="All files">
     <metrics statements="72" coveredstatements="46" conditionals="36" coveredconditionals="28" methods="13" coveredmethods="6" elements="121" coveredelements="80" complexity="0" loc="72" ncloc="72" packages="2" files="2" classes="2"/>
     <package name="tree">
       <metrics statements="57" coveredstatements="31" conditionals="28" coveredconditionals="20" methods="12" coveredmethods="5"/>
       <file name="tree.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/tree/tree.js">
         <metrics statements="57" coveredstatements="31" conditionals="28" coveredconditionals="20" methods="12" coveredmethods="5"/>
-        <line num="3" count="20" type="stmt"/>
-        <line num="4" count="20" type="stmt"/>
-        <line num="5" count="20" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="15" count="20" type="stmt"/>
-        <line num="17" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="21" count="20" type="stmt"/>
-        <line num="23" count="20" type="stmt"/>
-        <line num="24" count="44" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="8" type="stmt"/>
-        <line num="29" count="12" type="stmt"/>
-        <line num="31" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="8" type="stmt"/>
-        <line num="36" count="12" type="stmt"/>
-        <line num="40" count="20" type="stmt"/>
-        <line num="44" count="10" type="stmt"/>
-        <line num="46" count="10" type="stmt"/>
-        <line num="47" count="22" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="5" type="stmt"/>
-        <line num="51" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="52" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="30" type="stmt"/>
+        <line num="4" count="30" type="stmt"/>
+        <line num="5" count="30" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="15" count="30" type="stmt"/>
+        <line num="17" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="21" count="30" type="stmt"/>
+        <line num="23" count="30" type="stmt"/>
+        <line num="24" count="67" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="31" count="51" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="13" type="stmt"/>
+        <line num="36" count="21" type="stmt"/>
+        <line num="40" count="30" type="stmt"/>
+        <line num="44" count="15" type="stmt"/>
+        <line num="46" count="15" type="stmt"/>
+        <line num="47" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="9" type="stmt"/>
+        <line num="51" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="14" type="cond" truecount="2" falsecount="0"/>
         <line num="53" count="3" type="stmt"/>
-        <line num="56" count="10" type="stmt"/>
-        <line num="59" count="14" type="cond" truecount="2" falsecount="0"/>
-        <line num="60" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="64" count="4" type="stmt"/>
+        <line num="56" count="11" type="stmt"/>
+        <line num="59" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="64" count="12" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
         <line num="76" count="0" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
@@ -70,20 +70,20 @@
       <file name="tree-intersection.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/tree-intersection/tree-intersection.js">
         <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="12" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="16" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="20" count="10" type="stmt"/>
-        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="12" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="16" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="20" count="15" type="stmt"/>
+        <line num="23" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
       </file>
     </package>
   </project>
