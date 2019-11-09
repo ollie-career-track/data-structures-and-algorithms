@@ -8,18 +8,17 @@ describe('RepeatedWord Function', () => {
     expect(result).toBe('a');
   });
 
-  it.only('returns null if no repeat words', () => {
+  it('returns null if no repeat words', () => {
     const str = 'This is a sentence with no repeating words';
     const result = repeatedWord(str);
 
     expect(result).toBe(null);
   });
 
-  it('', () => {
+  it('handles a string with ridiculous punctuation', () => {
+    const str = `Once upon a time, there was /#!a$%^ brave princess who`;
 
-  });
-
-  it('', () => {
-
+    const result = repeatedWord(str);
+    expect(result).toBe('a');
   });
 });
