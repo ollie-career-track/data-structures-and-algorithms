@@ -17,4 +17,5 @@
 * [Breadth First Transversal](./challenges/breadth-first/README.md)
 * [Find Maximum Value](./challenges/find-maximum-value/README.md)
 * [Hash Table Implementation](./challenges/hashtable/README.md)
+* [Tree Intersection](./challenges/tree-intersection/README.md)
 * []()
