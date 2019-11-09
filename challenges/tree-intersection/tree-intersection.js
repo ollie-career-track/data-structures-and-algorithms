@@ -6,7 +6,7 @@ module.exports = function treeIntersection(treeOne, treeTwo) {
 
   while(queue.length > 0) {
     if(treeTwo.contains(queue[0].value)) {
-      intersection.push[queue[0].value];
+      intersection.push(queue[0].value);
     }
 
     if(queue[0].left) {
