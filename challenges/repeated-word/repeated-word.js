@@ -1,4 +1,4 @@
-module.exports = function RepeatedWord(lengthyString) {
+module.exports = function repeatedWord(lengthyString) {
   let word = '';
   const counter = {};
 
@@ -9,7 +9,7 @@ module.exports = function RepeatedWord(lengthyString) {
     
     if(lengthyString[i] === ' ') {
       !counter[word] ? counter[word] = 1 : counter[word] = 2;
-      
+
       if(counter[word] === 2) return word;
 
       word = '';

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573268552621" clover="3.2.0">
-  <project timestamp="1573268552621" name="All files">
+<coverage generated="1573268664627" clover="3.2.0">
+  <project timestamp="1573268664627" name="All files">
     <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1" elements="20" coveredelements="20" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="repeated-word.js" path="/Users/ollie/alchemy/career-track/data-structures-and-algorithms/challenges/repeated-word/repeated-word.js">
       <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
